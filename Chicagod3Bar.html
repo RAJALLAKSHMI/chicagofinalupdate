@@ -46,10 +46,10 @@ body{
  d3.json("../outputdata/outputJsonRaji1.json",function(err,data){
    data.forEach(function(d){
      d.Year=d.Year;
-     d.Over $500=d.Over $500;
-     d.Under $500=d.Under $500;
+     d.Over$500=d.Over$500;
+     d.Under$500=d.Under$500;
    });
-   var xData=["Over $500","Under $500"];
+   var xData=["Over$500","Under$500"];
    var dataIntermediate = xData.map(function (c) {
      return data.map(function (d) {
        return {x: d.Year, y: d[c]};

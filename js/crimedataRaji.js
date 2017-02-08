@@ -75,13 +75,13 @@ rl.on('close', function() {
     for (i = 0; i <= 15; i = i + 1) {
         tempData1 = {};
         tempData1.Year = i + 2001;
-        tempData1['Over $500'] = over[i];
-        tempData1['Under $500'] = under[i];
+        tempData1.Over$500 = over[i];
+        tempData1.Under$500 = under[i];
         jsonData1.push(tempData1);
         tempData2 = {};
         tempData2.Year = i + 2001;
         tempData2.Arrested = arrested[i];
-        tempData2['Not Arrested'] = noArrest[i];
+        tempData2.NotArrested = noArrest[i];
         jsonData2.push(tempData2);
     }
     /* getting json values */
@@ -92,4 +92,4 @@ rl.on('close', function() {
   });
   return 'JSON written successfully';
 }
-};
+}(2001);
